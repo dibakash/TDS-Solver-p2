@@ -1,0 +1,1940 @@
+===== Application Startup at 2025-11-29 10:01:01 =====
+
+/app/.venv/lib/python3.12/site-packages/pydub/utils.py:300: SyntaxWarning: invalid escape sequence '\('
+  m = re.match('([su]([0-9]{1,2})p?) \(([0-9]{1,2}) bit\)$', token)
+/app/.venv/lib/python3.12/site-packages/pydub/utils.py:301: SyntaxWarning: invalid escape sequence '\('
+  m2 = re.match('([su]([0-9]{1,2})p?)( \(default\))?$', token)
+/app/.venv/lib/python3.12/site-packages/pydub/utils.py:310: SyntaxWarning: invalid escape sequence '\('
+  elif re.match('(flt)p?( \(default\))?$', token):
+/app/.venv/lib/python3.12/site-packages/pydub/utils.py:314: SyntaxWarning: invalid escape sequence '\('
+  elif re.match('(dbl)p?( \(default\))?$', token):
+INFO:     Started server process [10]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:7860 (Press CTRL+C to quit)
+Verified starting the task...
+INFO:     10.16.34.155:41104 - "POST /solve HTTP/1.1" 200 OK
+--- INVOKING AGENT (Context: 2 items) ---
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2
+--- INVOKING AGENT (Context: 4 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Missing field answer'}
+--- INVOKING AGENT (Context: 6 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "hello world",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-uv?email=22f1001491%40ds.study.iitm.ac.in&id=47190",
+    "delay": null
+} 
+
+49.149707317352295
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-uv?email=22f1001491%40ds.study.iitm.ac.in&id=47190",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 8 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-uv?email=22f1001491%40ds.study.iitm.ac.in&id=47190
+--- INVOKING AGENT (Context: 10 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "uv http get https://tds-llm-analysis.s-anand.net/project2/uv.json?email=22f1001491@ds.study.iitm.ac.",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-uv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-git?email=22f1001491%40ds.study.iitm.ac.in&id=47348",
+    "delay": null
+} 
+
+31.26897144317627
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-git?email=22f1001491%40ds.study.iitm.ac.in&id=47348",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 12 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-git?email=22f1001491%40ds.study.iitm.ac.in&id=47348
+--- INVOKING AGENT (Context: 14 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "git add env.sample\ngit commit -m \"chore: keep env sample\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-git"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-md?email=22f1001491%40ds.study.iitm.ac.in&id=47484",
+    "delay": null
+} 
+
+31.701148986816406
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-md?email=22f1001491%40ds.study.iitm.ac.in&id=47484",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 16 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-md?email=22f1001491%40ds.study.iitm.ac.in&id=47484
+--- INVOKING AGENT (Context: 18 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "/project2/data-preparation.md",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-md"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-audio-passphrase?email=22f1001491%40ds.study.iitm.ac.in&id=47630",
+    "delay": null
+} 
+
+30.144736289978027
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-audio-passphrase?email=22f1001491%40ds.study.iitm.ac.in&id=47630",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 20 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-audio-passphrase?email=22f1001491%40ds.study.iitm.ac.in&id=47630
+--- INVOKING AGENT (Context: 22 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 24 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 26 items) ---
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Route → tools
+--- INVOKING AGENT (Context: 28 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 30 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 32 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "hushed parrot 219",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-audio-passphrase"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-heatmap?email=22f1001491%40ds.study.iitm.ac.in&id=48209",
+    "delay": null
+} 
+
+110.53894996643066
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-heatmap?email=22f1001491%40ds.study.iitm.ac.in&id=48209",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 34 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-heatmap?email=22f1001491%40ds.study.iitm.ac.in&id=48209
+--- INVOKING AGENT (Context: 36 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 38 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 40 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 42 items) ---
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Route → tools
+
+Sending Answer 
+{
+    "answer": "#b45a1e",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-heatmap"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=48651",
+    "delay": null
+} 
+
+82.59654498100281
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=48651",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 44 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=48651
+--- INVOKING AGENT (Context: 46 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 48 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 50 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 52 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\":1,\"name\":\"Alpha\",\"joined\":\"2024-01-30T00:00:00Z\",\"value\":5},{\"id\":2,\"name\":\"Gamma\",\"joined\":\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=49093",
+    "delay": null
+} 
+
+76.4617817401886
+Retrying..
+Formatted: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=48651",
+    "delay": null,
+    "message": "Retry Again!"
+} 
+
+--- INVOKING AGENT (Context: 54 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 56 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 58 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 60 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\": 1, \"name\": \"Alpha\", \"joined\": \"2024-01-30T00:00:00Z\", \"value\": 5}, {\"id\": 2, \"name\": \"Gamma\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=49400",
+    "delay": null
+} 
+
+119.55978083610535
+Retrying..
+Formatted: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=48651",
+    "delay": null,
+    "message": "Retry Again!"
+} 
+
+--- INVOKING AGENT (Context: 62 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 64 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\":1,\"name\":\"Alpha\",\"joined\":\"2024-01-30T00:00:00Z\",\"value\":5},{\"id\":2,\"name\":\"Gamma\",\"joined\":\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=49575",
+    "delay": null
+} 
+
+149.17042350769043
+Retrying..
+Formatted: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=48651",
+    "delay": null,
+    "message": "Retry Again!"
+} 
+
+--- INVOKING AGENT (Context: 66 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 68 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\":1,\"name\":\"Alpha\",\"joined\":\"2024-01-30T00:00:00Z\",\"value\":5},{\"id\":2,\"name\":\"Gamma\",\"joined\":\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=49779",
+    "delay": null
+} 
+
+187.0619034767151
+Not retrying, moving on to the next question
+Formatted: 
+ {
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=49779"
+} 
+
+--- INVOKING AGENT (Context: 70 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=49779
+--- INVOKING AGENT (Context: 72 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2/gh-tree.json
+--- INVOKING AGENT (Context: 74 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 76 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 78 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 1.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-logs?email=22f1001491%40ds.study.iitm.ac.in&id=50176",
+    "delay": null
+} 
+
+70.75796437263489
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-logs?email=22f1001491%40ds.study.iitm.ac.in&id=50176",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 80 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-logs?email=22f1001491%40ds.study.iitm.ac.in&id=50176
+--- INVOKING AGENT (Context: 82 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 84 items) ---
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 4.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Route → tools
+--- INVOKING AGENT (Context: 86 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 335.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-logs",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice?email=22f1001491%40ds.study.iitm.ac.in&id=50492",
+    "delay": null
+} 
+
+62.98907542228699
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice?email=22f1001491%40ds.study.iitm.ac.in&id=50492",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 88 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-invoice?email=22f1001491%40ds.study.iitm.ac.in&id=50492
+--- INVOKING AGENT (Context: 90 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 92 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 94 items) ---
+--- DETECTED MALFORMED JSON. ASKING AGENT TO RETRY ---
+Timeout exceeded (301.4178214073181s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+303.7011299133301
+Timeout exceeded (303.7033021450043s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+310.59811210632324
+Timeout exceeded (310.60019612312317s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/project2-invoice
+HTTP Error Response:
+ 
+Timeout exceeded (312.0696301460266s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+313.859356880188
+Timeout exceeded (313.8613107204437s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+319.312579870224
+Timeout exceeded (319.3146357536316s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+334.83975052833557
+Timeout exceeded (334.8420386314392s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+350.31417512893677
+Timeout exceeded (350.3159875869751s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+365.8737268447876
+Timeout exceeded (365.8758454322815s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+394.10748982429504
+Timeout exceeded (394.1197409629822s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+396.7044656276703
+Timeout exceeded (396.70687103271484s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "answer": "WRONG_ANSWER",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+412.21981859207153
+Timeout exceeded (412.22205209732056s) — instructing LLM to purposely submit wrong answer.
+Tasks completed successfully!
+Verified starting the task...
+INFO:     10.16.11.176:13732 - "POST /solve HTTP/1.1" 200 OK
+--- INVOKING AGENT (Context: 2 items) ---
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 4.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2
+--- INVOKING AGENT (Context: 4 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Missing field answer'}
+--- INVOKING AGENT (Context: 6 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "hello",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-uv?email=22f1001491%40ds.study.iitm.ac.in&id=53859",
+    "delay": null
+} 
+
+14.496049165725708
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-uv?email=22f1001491%40ds.study.iitm.ac.in&id=53859",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 8 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-uv?email=22f1001491%40ds.study.iitm.ac.in&id=53859
+--- INVOKING AGENT (Context: 10 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "uv http get https://tds-llm-analysis.s-anand.net/project2/uv.json?email=22f1001491@ds.study.iitm.ac.",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-uv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-git?email=22f1001491%40ds.study.iitm.ac.in&id=53897",
+    "delay": null
+} 
+
+5.547715663909912
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-git?email=22f1001491%40ds.study.iitm.ac.in&id=53897",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 12 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-git?email=22f1001491%40ds.study.iitm.ac.in&id=53897
+--- INVOKING AGENT (Context: 14 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "git add env.sample\ngit commit -m \"chore: keep env sample\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-git"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-md?email=22f1001491%40ds.study.iitm.ac.in&id=54101",
+    "delay": null
+} 
+
+30.334495782852173
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-md?email=22f1001491%40ds.study.iitm.ac.in&id=54101",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 16 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-md?email=22f1001491%40ds.study.iitm.ac.in&id=54101
+--- INVOKING AGENT (Context: 18 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "/project2/data-preparation.md",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-md"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-audio-passphrase?email=22f1001491%40ds.study.iitm.ac.in&id=54348",
+    "delay": null
+} 
+
+30.53894281387329
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-audio-passphrase?email=22f1001491%40ds.study.iitm.ac.in&id=54348",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 20 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-audio-passphrase?email=22f1001491%40ds.study.iitm.ac.in&id=54348
+--- INVOKING AGENT (Context: 22 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 24 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 26 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 28 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 30 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 32 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "hushed parrot 219",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-audio-passphrase"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-heatmap?email=22f1001491%40ds.study.iitm.ac.in&id=55133",
+    "delay": null
+} 
+
+110.91545629501343
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-heatmap?email=22f1001491%40ds.study.iitm.ac.in&id=55133",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 34 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-heatmap?email=22f1001491%40ds.study.iitm.ac.in&id=55133
+--- INVOKING AGENT (Context: 36 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 38 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 40 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 42 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "#b45a1e",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-heatmap"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=55609",
+    "delay": null
+} 
+
+76.42233610153198
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=55609",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 44 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=55609
+--- INVOKING AGENT (Context: 46 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 48 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 50 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 52 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\":1,\"name\":\"Alpha\",\"joined\":\"2024-01-30\",\"value\":5},{\"id\":2,\"name\":\"Gamma\",\"joined\":\"2024-02-01",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=56070",
+    "delay": null
+} 
+
+79.16415619850159
+Retrying..
+Formatted: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=55609",
+    "delay": null,
+    "message": "Retry Again!"
+} 
+
+--- INVOKING AGENT (Context: 54 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 56 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 58 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 60 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\": 1, \"name\": \"Alpha\", \"joined\": \"2024-01-30\", \"value\": 5}, {\"id\": 2, \"name\": \"Gamma\", \"joined\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=56409",
+    "delay": null
+} 
+
+126.17309856414795
+Retrying..
+Formatted: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=55609",
+    "delay": null,
+    "message": "Retry Again!"
+} 
+
+--- INVOKING AGENT (Context: 62 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 64 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\":1,\"name\":\"Alpha\",\"joined\":\"2024-01-30T00:00:00.000\",\"value\":5},{\"id\":2,\"name\":\"Gamma\",\"joined",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=56619",
+    "delay": null
+} 
+
+156.8954849243164
+Retrying..
+Formatted: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv?email=22f1001491%40ds.study.iitm.ac.in&id=55609",
+    "delay": null,
+    "message": "Retry Again!"
+} 
+
+--- INVOKING AGENT (Context: 66 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 68 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "answer": "[{\"id\": 1, \"name\": \"Alpha\", \"joined\": \"2024-01-30T00:00:00Z\", \"value\": 5}, {\"id\": 2, \"name\": \"Gamma\"",
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-csv"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Normalized JSON does not match expected output",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=56819",
+    "delay": null
+} 
+
+187.38176345825195
+Not retrying, moving on to the next question
+Formatted: 
+ {
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=56819"
+} 
+
+--- INVOKING AGENT (Context: 70 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-gh-tree?email=22f1001491%40ds.study.iitm.ac.in&id=56819
+--- INVOKING AGENT (Context: 72 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 74 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 76 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 78 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 80 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 1.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-gh-tree",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-logs?email=22f1001491%40ds.study.iitm.ac.in&id=57320",
+    "delay": null
+} 
+
+91.79450702667236
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-logs?email=22f1001491%40ds.study.iitm.ac.in&id=57320",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 82 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-logs?email=22f1001491%40ds.study.iitm.ac.in&id=57320
+--- INVOKING AGENT (Context: 84 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 86 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 88 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 90 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 92 items) ---
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 335.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-logs",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice?email=22f1001491%40ds.study.iitm.ac.in&id=57713",
+    "delay": null
+} 
+
+92.58832812309265
+Formatted: 
+ {
+    "correct": true,
+    "reason": "",
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice?email=22f1001491%40ds.study.iitm.ac.in&id=57713",
+    "delay": null
+} 
+
+--- INVOKING AGENT (Context: 94 items) ---
+Route → tools
+
+Fetching and rendering: https://tds-llm-analysis.s-anand.net/project2-invoice?email=22f1001491%40ds.study.iitm.ac.in&id=57713
+--- INVOKING AGENT (Context: 96 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 98 items) ---
+Route → tools
+--- INVOKING AGENT (Context: 100 items) ---
+Route → agent
+Timeout exceeded (301.26811623573303s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+303.87440729141235
+Timeout exceeded (303.8765916824341s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+306.5304710865021
+Timeout exceeded (306.5322413444519s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+309.3999011516571
+Timeout exceeded (309.4017095565796s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+311.96850299835205
+Timeout exceeded (311.97048234939575s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+320.51127529144287
+Timeout exceeded (320.5133900642395s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+334.37090396881104
+Timeout exceeded (334.3731806278229s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+350.91318559646606
+Timeout exceeded (350.9149920940399s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+366.2750520706177
+Timeout exceeded (366.2832770347595s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+381.90835547447205
+Timeout exceeded (381.910222530365s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+400.8393313884735
+Timeout exceeded (400.8417761325836s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+413.6158800125122
+Timeout exceeded (413.61790204048157s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+429.206157207489
+Timeout exceeded (429.2081742286682s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+444.78742957115173
+Timeout exceeded (444.79000091552734s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+460.5188503265381
+Timeout exceeded (460.520761013031s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+475.9515836238861
+Timeout exceeded (475.95346999168396s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+491.65539932250977
+Timeout exceeded (491.65740442276s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+Got the response: 
+ {
+    "correct": false,
+    "reason": "Total line items to two decimals",
+    "url": null,
+    "delay": null
+} 
+
+507.5863699913025
+Timeout exceeded (507.5881509780884s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (522.8809208869934s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (537.6182191371918s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (553.5542614459991s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (570.2240424156189s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (585.0868766307831s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (602.1688492298126s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (616.2581739425659s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (631.3035490512848s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (646.3355758190155s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (661.9772617816925s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (677.1914899349213s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (691.933296918869s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (707.8686375617981s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (723.8909718990326s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (726.3228559494019s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (739.6305842399597s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (754.0882248878479s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (770.283308506012s) — instructing LLM to purposely submit wrong answer.
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 4.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 8.0 seconds as it raised ResourceExhausted: 429 Resource has been exhausted (e.g. check quota)..
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (800.5975246429443s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (802.5196273326874s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (817.7423920631409s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (834.1837759017944s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (849.0964596271515s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (865.3265912532806s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (879.556615114212s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (895.7525813579559s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (911.0768527984619s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (925.993789434433s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (941.2466070652008s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (957.578830242157s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (973.7920613288879s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (988.2014584541321s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (1002.7228164672852s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (1019.0896375179291s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (1034.7021951675415s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (1049.8199682235718s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/submit
+HTTP Error Response:
+ {'error': 'Deadline exceeded. Project closed'}
+Timeout exceeded (1064.9470193386078s) — instructing LLM to purposely submit wrong answer.
+Route → tools
+
+Sending Answer 
+{
+    "email": "22f1001491@ds.study.iitm.ac.in",
+    "answer": 0.0,
+    "url": "https://tds-llm-analysis.s-anand.net/project2-invoice",
+    "secret": "Sauce@123"
+}
+ to url: https://tds-llm-analysis.s-anand.net/project2-invoice
+HTTP Error Response:
+ 
+Timeout exceeded (1080.2610850334167s) — instructing LLM to purposely submit wrong answer.
+Tasks completed successfully!
+INFO:     10.16.6.70:3757 - "GET / HTTP/1.1" 404 Not Found
+ 
+
+ 8/25

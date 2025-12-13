@@ -1,5 +1,7 @@
 import pytesseract
+
 from PIL import Image
+
 from io import BytesIO
 import base64
 import os
@@ -12,10 +14,11 @@ def load_image(image_input):
     if isinstance(image_input, Image.Image):
         return image_input.convert("RGB")
     if isinstance(image_input, str):
-        if image_input.startswith("data:"):   # base64 data URL
+        if image_input.startswith("data:"):  # base64 data URL
             _, b64 = image_input.split(",", 1)
             return Image.open(BytesIO(base64.b64decode(b64))).convert("RGB")
-        return Image.open(os.path.join("LLMFiles", image_input)).convert("RGB")
+        base = __import__("shared_store").current_q_folder or "LLMFiles"
+        return Image.open(os.path.join(base, image_input)).convert("RGB")
     raise ValueError("Unsupported image input type")
 
 
@@ -44,9 +47,6 @@ def ocr_image_tool(payload: dict) -> dict:
         img = load_image(image_data)
         text = pytesseract.image_to_string(img, lang=lang)
 
-        return {
-            "text": text.strip(),
-            "engine": "pytesseract"
-        }
+        return {"text": text.strip(), "engine": "pytesseract"}
     except Exception as e:
         return f"Error occurred: {e}"

@@ -1,5 +1,6 @@
 from langgraph.graph import StateGraph, END, START
 from shared_store import url_time
+import shared_store
 import time
 from langchain_core.rate_limiters import InMemoryRateLimiter
 from langgraph.prebuilt import ToolNode
@@ -52,11 +53,15 @@ TOOLS = [
 # LLM INIT
 # -------------------------------------------------
 rate_limiter = InMemoryRateLimiter(
-    requests_per_second=7 / 60, check_every_n_seconds=1, max_bucket_size=4
+    requests_per_second= 4  / 60, check_every_n_seconds=1, max_bucket_size=4
 )
 
+model = "gemini-2.5-pro"
+# model = "gemini-2.5-flash"
+# model = "gemini-3-pro-preview"
+
 llm = init_chat_model(
-    model_provider="google_genai", model="gemini-2.5-flash", rate_limiter=rate_limiter
+    model_provider="google_genai", model=model, rate_limiter=rate_limiter
 ).bind_tools(TOOLS)
 
 
@@ -122,21 +127,34 @@ def agent_node(state: AgentState):
         diff = cur_time - prev_time
 
         if diff >= 180 or (offset != "0" and (cur_time - float(offset)) > 90):
-            print(
-                f"Timeout exceeded ({diff}s) — instructing LLM to purposely submit wrong answer."
-            )
+            # Only force a wrong submission once per URL. Subsequent timeouts
+            # should not repeatedly inject the failure instruction.
+            if cur_url in getattr(shared_store, "forced_fail_submitted", set()):
+                print(
+                    f"Timeout exceeded ({diff}s) but forced wrong already submitted for {cur_url}; skipping forced submission."
+                )
+            else:
+                print(
+                    f"Timeout exceeded ({diff}s) — instructing LLM to purposely submit wrong answer."
+                )
 
-            fail_instruction = """
-            You have exceeded the time limit for this task (over 180 seconds).
-            Immediately call the `post_request` tool and submit a WRONG answer for the CURRENT quiz.
-            """
+                fail_instruction = """
+                You have exceeded the time limit for this task (over 180 seconds).
+                Immediately call the `post_request` tool and submit a WRONG answer for the CURRENT quiz.
+                """
 
-            # Using HumanMessage (as you correctly implemented)
-            fail_msg = HumanMessage(content=fail_instruction)
+                # Mark as submitted so we don't repeat
+                try:
+                    shared_store.forced_fail_submitted.add(cur_url)
+                except Exception:
+                    pass
 
-            # We invoke the LLM immediately with this new instruction
-            result = llm.invoke(state["messages"] + [fail_msg])
-            return {"messages": [result]}
+                # Using HumanMessage (as you correctly implemented)
+                fail_msg = HumanMessage(content=fail_instruction)
+
+                # We invoke the LLM immediately with this new instruction
+                result = llm.invoke(state["messages"] + [fail_msg])
+                return {"messages": [result]}
     # --- TIME HANDLING END ---
 
     trimmed_messages = trim_messages(

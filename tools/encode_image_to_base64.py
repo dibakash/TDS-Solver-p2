@@ -1,7 +1,10 @@
 from shared_store import BASE64_STORE
+import shared_store
 import os
 import base64, uuid
 from langchain_core.tools import tool
+
+
 @tool
 def encode_image_to_base64(image_path: str) -> str:
     """
@@ -39,10 +42,11 @@ def encode_image_to_base64(image_path: str) -> str:
         in memory, e.g. "BASE64_KEY:4f9d93ea-7e94-4edc-962c-e6f7d358c2a3".
     """
     try:
-        image_path = os.path.join("LLMFiles", image_path)
+        base = shared_store.current_q_folder or "LLMFiles"
+        image_path = os.path.join(base, image_path)
         with open(image_path, "rb") as f:
             raw = f.read()
-    
+
         encoded = base64.b64encode(raw).decode("utf-8")
 
         key = str(uuid.uuid4())

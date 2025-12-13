@@ -1,6 +1,8 @@
 from langchain_core.tools import tool
 import requests
 import os
+import shared_store
+
 
 @tool
 def download_file(url: str, filename: str) -> str:
@@ -18,7 +20,8 @@ def download_file(url: str, filename: str) -> str:
     try:
         response = requests.get(url, stream=True)
         response.raise_for_status()
-        directory_name = "LLMFiles"
+        # Use per-question folder if available, else fallback to LLMFiles
+        directory_name = shared_store.current_q_folder or "LLMFiles"
         os.makedirs(directory_name, exist_ok=True)
         path = os.path.join(directory_name, filename)
         with open(path, "wb") as f:
